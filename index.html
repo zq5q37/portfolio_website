@@ -11,20 +11,30 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.png" class="logo">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#academic-projects">Academic Projects</a></li>
+                <li><a href="#co-curricular-activities">Co-curricular Activities</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Software designer/artist</p>
-            <h1>Hey, I'm <span>aowow</span></h1>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2 class="compsci">Computer Science student</h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2 class="freeart">Freelance Artist</h2>
+                  </div>
+                </div>
+              </div>
+            <!-- <p class="compsci">Computer Science student</p>
+            <p class="freeart">Freelance Artist</p> -->
+            <h1>Hi, I'm <span>Zi Qi</span></h1>
         </div>
     </div>
 </div>
@@ -37,92 +47,113 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>blahbaskdnksfnlkfalfhslkfhalkfhslkfhsaf\</p>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
                     <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
                     
                 </div>
-                <div class="tab-contents active-tab" id="skills">
+                <div class="tab-contents" id="skills">
                     <ul>
-                        <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
-                        <li><span>Web Development</span><br>Web app Development</li>
-                        <li><span>App Development</span><br>Buiding Android apps</li>
+                        <li><span>Programming</span><br>Python, Java</li>
+                        <li><span>Web Development</span><br>HTML5, CSS, Flask</li>
+                        <li><span>3D modelling</span><br>Blender, Rhino</li>
+                        <li><span>Graphic Design</span><br>Adobe Illustrator</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>2022 - Current</span><br>Singapore University of Technology and Design</li>
+                        <li><span>Nov 2018 to Present</span><br>Freelance: Illustration</li>
+                        <li><span>Jan 2020 to Mar 2020</span><br>Deliveroo: Part time Food Packer</li>
+                        <li><span>Jan 2022 to Aug 2022</span><br>RE&S Yaki Yaki Bo: Part time Service Staff</li>
+                        <li><span>Dec 2022 to Mar 2023</span><br>JJ Tutorial: Tutor for Primary 5 Mathematics</li>
+                        <li><span>Jun 2023 to Aug 2023</span><br>Cornerstone Global Partners Pte Ltd (CGP) ZARA: Part time worker</li>
                     </ul>
                 </div>
-                <div class="tab-contents" id="education">
+                <div class="tab-contents active-tab" id="education">
                     <ul>
-                        <li><span>bleh</span><br>djsgkgds</li>
+                        <li><span>Sep 2022 to Present</span><br>Singapore University of Technology and Design</li>
+                        <p>•    2nd year Bachelor of Engineering (Computer Science and Design)<br>
+                            •	GPA 4.20/5.0<br>
+                            •	Date of graduation: Sep 2026
+                            </p><br>
+                        <li><span>Feb 2020 to Dec 2021</span><br>Anderson Serangoon Junior College</li>
+                        <p>•    H2 Further Mathematics<br>
+                            •	Outstanding Contribution Award 2021
+                        </p>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- -------------------services------------------ -->
-<div id="services">
+<!-- -------------------ACADEMIC PROJECTS------------------ -->
+<div id="academic-projects">
     <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>nsdlkngslkfndlkfnsdlkfnsdlkfnkfnls</p>
-                <a href="#">learn more</a>
+        <h1 class="sub-title">Academic Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/acad-proj-1.png">
+                <div class="layer">
+                    <h3>Molluscophobia</h3>
+                    <p>A terminal-based card game inspired by "Slay the Spire", co-developed within a 5-person team</p>
+                    <a href="https://replit.com/@zq5q37/Molluscophobia" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>App Design</h2>
-                <p>nsdlkngslkfndlkfnsdlkfnsdlkfnkfnls</p>
-                <a href="#">learn more</a>
+            <div class="work">
+                <img src="images/acad-proj-2.png">
+                <div class="layer">
+                    <h3>Gong Gong</h3>
+                    <p>An interactive light installation “Gong Gong”, designed for the Chinese Opera House located in SUTD campus
+                         in a team of 5, which consists of an array of lanterns which light up when the Gong is hit</p>
+                    <a href="http://asd.courses.sutd.edu.sg/dti-teams/cohort-4-team-6-project-part-4/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
-            <div>
-                <i class="fa-solid fa-pencil"></i>
-                <h2>Illustration</h2>
-                <p>nsdlkngslkfndlkfnsdlkfnsdlkfnkfnls</p>
-                <a href="#">learn more</a>
+            <div class="work">
+                <img src="images/acad-proj-3.png">
+                <div class="layer">
+                    <h3>Birb</h3>
+                    <p>Utilized Stable Diffusion and ControlNet to conceptualize a product design inspired by Eames’ house bird</p>
+                    <a href="https://drive.google.com/file/d/1llwjJFHT2FYyQFiswcw5GDTYQAiTLmp8/view?usp=sharing" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
         </div>
     </div>
 </div>
-<!-- -------------------------portfolio------------------- -->
-<div id="portfolio">
+<!-- -------------------------co-curricular-activities------------------- -->
+<div id="co-curricular-activities">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">Co-curricular Activities</h1>
         <div class="work-list">
             <div class="work">
                 <img src="images/work-1.png">
                 <div class="layer">
-                    <h3>App</h3>
-                    <p>fjansjfnasjfsanfjsanfjsanfjfnsajn</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>CNY Street Light-Up 2024</h3>
+                    <p>Lead Designer of Centrepiece: Illustrated variations using Procreate, modelled the whole centrepiece in Blender, organized assets with dimensions in PowerPoint
+                        </p>
+                    <a href="https://docs.google.com/presentation/d/1GU7p92uBJ3jpNpqG833i6v0f7bhZaAXeHzf2QaxBDoA/edit?usp=sharing" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/work-2.png">
                 <div class="layer">
-                    <h3>Game</h3>
-                    <p>fjansjfnasjfsanfjsanfjsanfjfnsajn</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Art Installation project</h3>
+                    <p>Organiser and Executor for Mural on School Campus</p>
                 </div>
             </div>
             <div class="work">
                 <img src="images/work-3.png">
                 <div class="layer">
-                    <h3>Art</h3>
-                    <p>fjansjfnasjfsanfjsanfjsanfjfnsajn</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>SUTD Unreal Engine Interest Group</h3>
+                    <p>Developed 3D assets for a student game project “OverPrepared” using Blender, inspired by “OverCooked”</p>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <!-- <a href="#" class="btn">See more</a> -->
     </div>
 </div>
 <!-- -----------------------contact------------ -->
@@ -136,7 +167,7 @@
                     <a href="https://www.instagram.com/aowow_/"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/zi-qi-khoo-5914a6244/"><i class="fa-brands fa-linkedin"></i></i></a>
                 </div>
-                <a href="images/Resume 2_2_2024.docx" class="btn btn2">Download CV</a>
+                <a href="images/Resume 2_2_2024.docx" class="btn btn2">Download Resume</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
